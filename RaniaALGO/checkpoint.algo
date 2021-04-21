@@ -1,0 +1,27 @@
+ALGORITHM read_sentence
+VAR
+    c:CHAR;
+    x,y,z,i: INTEGER;
+    x,y,z: INTEGER:=0;
+
+ alength : ARRAY_OF string[L...U];
+ avowel : ARRAY_OF string[a,e,i,o,u];
+ acharacter : ARRAY_OF CHAR['.'];
+BEGIN
+read (c)
+    WHILE (c <>'.') DO
+        alength[x] <> Null;
+        x:=x+1;
+    END_WHILE
+    WHILE ( c <> '.') DO
+        avowel[y] <> Null;
+        y:=y+1;
+    END_WHILE
+    WHILE (c<> '.') DO
+        acharacter[z]<> Null;
+        z:=z+1;
+    END_WHILE
+    write(x)
+    write(y)
+    write(z)
+END
