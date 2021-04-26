@@ -1,0 +1,17 @@
+ALGORITHM sumoftwoelements
+VAR
+    i,j: INTEGER;
+    tab1 : ARRAY_OF integer[50];
+    tab2 : ARRAY_OF integer[50];
+BEGIN
+    FOR i FROM 0 TO n-1  DO
+        WHILE (j from 0 to i) DO
+            IF (j==i) THEN
+                sum+=tab1[i];
+            END_IF  
+            IF (tab1[i]==tab2[j]) THEN
+                break;
+            END_IF
+        END_WHILE
+    END_FOR
+END
