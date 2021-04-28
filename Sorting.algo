@@ -1,0 +1,25 @@
+
+PROCEDURE swap(VAR xp, VAR yp : INTEGER)
+VAR
+    tmp : INTEGER;
+BEGIN
+    tmp := xp;
+    xp := yp;
+    yp := tmp;
+END
+
+
+
+
+PROCEDURE insertion_sort(A : ARRAY_OF INTEGER[50];)
+VAR
+i,j: INTEGER;
+BEGIN
+    FOR i FROM 1 TO length(A)-1   DO
+        j:=i;
+        WHILE (j>0 and A[j-1]>A[j]) DO
+            swap (A[j] and A[j-1]);
+        END_WHILE
+        j:=j-1;
+    END_FOR
+END
